@@ -8,7 +8,7 @@ import os
 taxon_encodeID_db = {}
 
 #lista de taxons a serem analisados
-taxons = ["Aotus", "Microcebus", "Otolemur", "Pan", "Callicebus", "Homo", "Nomascus"]
+taxons = ["Aotus", "Microcebus", "Otolemur", "Pan", "Callicebus", "Homo", "Nomascus", "Callithrix"]
 
 #Funcao: Cria base de dados formato fasta.
 #Recebe como parâmetro o diretório dos arquivos .fas
@@ -163,10 +163,10 @@ def escreverArquivoFasta(cabecalho_fasta, sequencia_nucleotidica):
 def make():
     
     print("\n... Organizando os resultados...")
-    os.system("mkdir -p Aotus Callicebus Homo Pan Otolemur Nomascus Microcebus")
+    os.system("mkdir -p Aotus Callicebus Homo Pan Otolemur Nomascus Microcebus Callithrix")
     print("\nDiretórios criados!")
     print("...Movendo resultados para seus respectivos diretórios.")
-    os.system("mv Aotus_ENCODE* Aotus; mv Callicebus_ENCODE* Callicebus; mv Homo_ENCODE* Homo; mv Pan_ENCODE* Pan; mv Otolemur_ENCODE* Otolemur; mv Nomascus_ENCODE* Nomascus; mv Microcebus_ENCODE* Microcebus")   
+    os.system("mv Aotus_ENCODE* Aotus; mv Callicebus_ENCODE* Callicebus; mv Homo_ENCODE* Homo; mv Pan_ENCODE* Pan; mv Otolemur_ENCODE* Otolemur; mv Nomascus_ENCODE* Nomascus; mv Microcebus_ENCODE* Microcebus; mv Callithrix_ENCODE* Callithrix")   
     print("\nTrabalho finalizado!")
 
 if __name__ == '__main__':
